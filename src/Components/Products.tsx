@@ -59,7 +59,7 @@ function Products() {
           bring joy and enchantment to every scoop.
         </p>
       </div>
-      <div className="max-w-7xl mx-auto grid grid-cols-3 text-center justify-center gap-10 px-4 mb-15">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 space-y-20 lg:space-y-0 lg:grid-cols-3 text-center justify-center gap-5 xl:gap-10 xl:px-4 mb-20">
         {products.map((product) => (
           <ProductItem
             key={product.id}

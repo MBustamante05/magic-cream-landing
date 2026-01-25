@@ -1,8 +1,8 @@
 function About() {
   return (
-    <div className="relative mb-10 mt-5 overflow-hidden">
-      <div className="max-w-7xl mx-auto grid grid-cols-2 gap-20">
-        <div className="relative col-span-1 px-24 flex flex-col justify-center">
+    <div className="relative mb-10 xl:mt-5 overflow-hidden">
+      <div className="max-w-7xl mx-auto grid xl:grid-cols-2 grid-cols-1 gap-20">
+        <div className="relative rounded-3xl xl:rounded-none col-span-1 px-10 xl:px-24 py-10 xl:py-0 flex flex-col justify-center">
           <div className="z-20">
             <h2 className="text-6xl font-bold mb-7 text-primary text-center">
               About <span className="text-brown">Us</span>
@@ -11,7 +11,7 @@ function About() {
               Magic Cream is not just an ice cream; it's an experience that
               transports you to a world of wonder and delight.
             </p>
-            <p className="font-light text-lg mb-4">
+            <p className="font-light text-lg ">
               Our commitment to quality and innovation ensures that every bite
               of Magic Cream is a journey into the extraordinary. Whether you're
               indulging in a classic flavor or exploring our seasonal specials,
@@ -24,11 +24,11 @@ function About() {
           </div>
           <img
             src="/bg-decor.png"
-            className="absolute top-0 left-0 w-full h-full object-cover"
+            className="hidden xl:block absolute top-0 left-0 w-full h-full object-cover"
             alt=""
           />
         </div>
-        <div className="col-span-1">
+        <div className="col-span-1 flex justify-center items-center px-10">
           <img src="/aboutUs3.png" alt="About Magic Cream" className="" />
         </div>
       </div>
