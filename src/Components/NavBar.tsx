@@ -8,7 +8,7 @@ type NavItemProps = {
 
 const NavItem = ({ id, label, active, setActive }: NavItemProps) => {
   const liStyle =
-    "list-none text-xl hover:rounded-3xl px-7 py-2 hover:cursor-pointer hover:font-semibold transition-all duration-200";
+    "list-none text-xl hover:rounded-3xl px-7 py-2 hover:cursor-pointer hover:font-semibold transition-all duration-200 ease-in-out";
 
   const liActive = "bg-blue text-white font-semibold rounded-3xl";
   const liHover = "hover:bg-blue hover:text-white";
@@ -28,11 +28,11 @@ function NavBar() {
 
   return (
     <nav>
-      <ul className="flex justify-evenly items-center">
+      <ul className="flex justify-between items-center max-w-7xl mx-auto">
         <NavItem id="home" label="Home" active={active} setActive={setActive} />
         <NavItem id="about" label="About" active={active} setActive={setActive} />
 
-        <img src="/magic-logo2.png" className="w-24" alt="Logo" />
+        <img src="/magic-logo2.png" className="w-22" alt="Logo" />
 
         <NavItem
           id="products"
