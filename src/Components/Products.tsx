@@ -49,7 +49,7 @@ function Products() {
     },
   ];
   return (
-    <div className="bg-brown text-white mt-20 pt-20 pb-3 px-10">
+    <div className="bg-brown text-white mt-30 pt-20 pb-3 px-7 md:px-10">
       <div className="max-w-7xl mx-auto text-center mb-30">
         <h2 className="text-6xl font-bold mb-5 text-blue">
           Our <span className="text-white">Products</span>

@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 @theme {
   --color-cream: #d7bbad;
   --color-peach: #ffede3;

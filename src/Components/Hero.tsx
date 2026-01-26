@@ -7,7 +7,7 @@ function Hero() {
   return (
     <div className="min-h-screen overflow-hidden">
       <NavBar />
-      <section className=" relative mt-1 bg-blue min-h-[85vh] rounded-3xl flex flex-col justify-center items-center text-center px-4">
+      <section className="relative mt-25 md:mt-1 bg-blue min-h-[85vh] rounded-3xl flex flex-col justify-center items-center text-center px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-[13rem] font-bold text-white mb-10 leading-none ">
             Magic Cream

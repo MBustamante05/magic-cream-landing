@@ -6,16 +6,16 @@ import Products from './Components/Products'
 function App() {
   return (
     <div className='py-2'>
-      <section id='home' className='px-5 md:px-10'>
+      <section id='home' className='px-4 md:px-10'>
         <Hero />
       </section>
-      <section id='about' className='px-5 md:px-10'>
+      <section id='about' className='px-4 md:px-10'>
         <About />
       </section>
-      <section id="product">
+      <section id="products">
         <Products />
       </section>
-      <section id="contact" className='px-5 md:px-10'>
+      <section id="contact" className='px-4 md:px-10'>
         <Contact />
       </section>
     </div>
