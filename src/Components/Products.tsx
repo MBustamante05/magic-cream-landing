@@ -13,7 +13,7 @@ const ProductItem = (props: ProductItemProps) => {
       <div className="absolute bg-peach shadow-peach shadow-sm rounded-3xl p-4 -top-20">
         <img src={props.image} alt={props.name} className="w-40 h-40 object-contain" />
       </div>
-      <h1 className="text-2xl text-peach font-bold">{props.name}</h1>
+      <h1 className="text-2xl text-white font-bold">{props.name}</h1>
       <p className="text-peach/70">{props.description}</p>
       <span className="text-peach/70 underline font-medium italic mt-2 cursor-pointer">More info</span>
       <div className="flex justify-between items-center w-full mt-3">
