@@ -1,10 +1,19 @@
 import Footer from "./Footer";
+import { motion } from "framer-motion";
 
 function Contact() {
   return (
     <div className="min-h-screen overflow-hidden">
-      <section className="bg-[url(/bgContact2.png)] bg-cover relative mt-30 min-h-[85vh] rounded-3xl flex justify-end items-center px-4 sm:px-7 md:px-14">
-        <div className="bg-brown px-7 md:px-10 py-7 md:py-10 rounded-3xl max-w-2xl">
+      <motion.section
+       initial={{ opacity: 0 }}
+       whileInView={{ opacity: 1 }}
+       transition={{ duration: 1, ease: "easeInOut" }}
+       className="bg-[url(/bgContact2.png)] bg-cover relative mt-30 min-h-[85vh] rounded-3xl flex justify-end items-center px-4 sm:px-7 md:px-14">
+        <motion.div 
+        initial={{ opacity: 0, x: 300 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        className="bg-brown px-7 md:px-10 py-7 md:py-10 rounded-3xl max-w-2xl">
           <h1 className="text-[2rem] sm:text-[4rem] md:text-[6rem] text-white font-bold mb-10 leading-none">
             Contact <span className="text-orange italic font-semibold">Us</span>
           </h1>
@@ -34,8 +43,8 @@ function Contact() {
               </button>
             </form>
           </div>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
       <Footer />
 
     </div>
